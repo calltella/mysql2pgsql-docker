@@ -14,7 +14,7 @@ MySQLからPostgreSQLにDockerとpgloaderを使ってデータコンバートし
 
 ### ログイン
 ```
-docker-compose exec posgres bash
+docker-compose exec postgres bash
 psql -U postgres
 pg_dump -U postgres -d postgres > database.dump
 /var/lib/postgresql

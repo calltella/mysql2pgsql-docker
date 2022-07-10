@@ -2,7 +2,6 @@ FROM postgres:14.4
 RUN apt-get update && apt-get install -y \
   wget \
   sudo \
-  pgloader \
   git \
   sbcl \
   unzip \
@@ -22,5 +21,5 @@ WORKDIR /usr/src/pgloader
 
 RUN make pgloader
 
-ENV PATH $PATH:/usr/src/pgloader/pgloader/build/bin
+ENV PATH $PATH:/usr/src/pgloader/build/bin
 
