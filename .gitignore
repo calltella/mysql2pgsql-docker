@@ -16,5 +16,5 @@ yarn-error.log
 *.sqlite
 .htaccess
 /storage
-
+README_MEMO.md
 
